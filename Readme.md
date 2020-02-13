@@ -9,4 +9,8 @@ This example demonstrates to bind the Diagram control to an in-memory data sourc
 * [HomeController.cs](./CS/DiagramContainers/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/DiagramContainersVB/Controllers/HomeController.vb))
 * [Item.cs](./CS/DiagramContainers/Models/Item.cs) (VB: [Item.vb](./VB/DiagramContainersVB/Models/Item.vb))
 * [DiagramDataProvider.cs](./CS/DiagramContainers/Models/DiagramDataProvider.cs) (VB: [DiagramDataProvider.vb](./VB/DiagramContainersVB/Models/DiagramDataProvider.vb))
-<!-- default file list end -->
+<!-- default file list end -->  
+
+***See also:***  
+[Diagram for MVC - Node and Edge data sources - How to bind the extension to in-memory data sources](https://github.com/DevExpress-Examples/diagram-for-mvc-node-and-edge-data-sources-how-to-bind-the-extension-to-in-memory-data-sources)  
+[Diagram for MVC - Tree from Linear Data Structure - How to bind the extension to an in-memory data source](https://github.com/DevExpress-Examples/diagram-for-mvc-tree-from-linear-data-structure-how-to-bind-to-an-in-memory-data-source)
