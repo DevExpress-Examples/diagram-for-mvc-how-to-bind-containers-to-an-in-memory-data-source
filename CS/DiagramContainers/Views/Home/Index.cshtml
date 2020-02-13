@@ -1,0 +1,34 @@
+@{
+    ViewBag.Title = "Diagram for MVC - How to bind containers to an in-memory data source";
+}
+
+@model IEnumerable<DiagramContainers.Models.Item>
+
+@Html.DevExpress().Diagram(settings =>
+{
+    settings.Name = "Diagram";
+    settings.BatchUpdateRouteValues = new { Controller = "Home", Action = "DiagramUpdate" };
+
+    settings.Width = Unit.Percentage(100);
+    settings.Height = Unit.Pixel(600);
+
+    settings.SimpleView = true;
+
+    settings.SettingsToolbox.Groups.Add(g =>
+    {
+        g.Category = DevExpress.Web.ASPxDiagram.DiagramShapeCategory.Containers;
+    });
+    settings.SettingsToolbox.Groups.Add(g =>
+    {
+        g.Category = DevExpress.Web.ASPxDiagram.DiagramShapeCategory.General;
+    });
+
+    settings.Mappings.Node.Key = "ID";
+    settings.Mappings.Node.ContainerKey = "ContainerID";
+    settings.Mappings.Node.Type = "Type";
+    settings.Mappings.Node.Text = "Text";
+    settings.Mappings.Node.Left = "X";
+    settings.Mappings.Node.Top = "Y";
+    settings.Mappings.Node.Width = "Width";
+    settings.Mappings.Node.Height = "Height";
+}).Bind(Model).GetHtml()
