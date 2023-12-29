@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Diagram for MVC - How to bind containers to an in-memory data source
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/240296406/)**
-<!-- run online end -->
 
 This example demonstrates to bind the [Diagram](https://docs.devexpress.com/AspNetMvc/401417/components/diagram) extension to an in-memory data source and wrap shapes in horizontal and vertical containers. Use the [ContainerKey](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.ContainerKey) property to specify the name of a data source field that provides the key of a shape's parent container shape.
 
